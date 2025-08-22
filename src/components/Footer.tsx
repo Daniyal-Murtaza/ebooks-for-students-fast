@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand & Mission */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              $10<span className="text-trust-blue">Ebooks</span>
-            </h3>
+            <span className="text-xl font-black text-foreground leading-none">
+              EbookBro.com
+            </span>
             <p className="text-muted-foreground mb-4">
-              Making education affordable, one ebook at a time. 
+              Making education affordable, one ebook at a time.
               Helping students save money on expensive course materials.
             </p>
             <Button variant="accent" size="sm">

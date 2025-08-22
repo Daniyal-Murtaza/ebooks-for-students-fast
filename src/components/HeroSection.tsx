@@ -73,23 +73,22 @@ const HeroSection = () => {
 
       {/* Modern Navbar */}
       <header
-        className={`absolute top-8 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled
+        className={`absolute top-8 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
             ? 'bg-white/95 backdrop-blur-md shadow-lg border border-white/20 rounded-2xl mx-4'
             : 'bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl mx-4'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="relative">
+              {/* <div className="relative">
                 <BookOpen className="w-8 h-8 text-trust-blue" />
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-trust-green rounded-full animate-pulse" />
-              </div>
+              </div> */}
               <div className="flex flex-col">
                 <span className="text-xl font-black text-foreground leading-none">
-                  $10 Ebooks
+                  EbookBro.com
                 </span>
                 <span className="text-xs text-muted-foreground hidden sm:block">
                   Affordable Academic Resources
@@ -119,7 +118,7 @@ const HeroSection = () => {
               >
                 Get Started
               </Button>
-              
+
               {/* Mobile Menu */}
               <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                 <SheetTrigger asChild>
@@ -138,7 +137,7 @@ const HeroSection = () => {
                     <div className="flex items-center justify-between mb-8">
                       <div className="flex items-center gap-2">
                         <BookOpen className="w-8 h-8 text-trust-blue" />
-                        <span className="text-xl font-bold text-foreground">$10 Ebooks</span>
+                        <span className="text-xl font-bold text-foreground">EbookBro.com</span>
                       </div>
                       <Button
                         variant="ghost"
@@ -170,7 +169,7 @@ const HeroSection = () => {
                     <div className="border-t pt-6 space-y-4">
                       <div className="flex items-center gap-3 text-sm text-muted-foreground">
                         <Mail className="w-4 h-4" />
-                        <span>support@10ebooks.com</span>
+                        <span>support@ebookbro.com</span>
                       </div>
                       <div className="flex items-center gap-3 text-sm text-muted-foreground">
                         <Phone className="w-4 h-4" />
@@ -190,15 +189,15 @@ const HeroSection = () => {
       </header>
 
       {/* Hero Background with Parallax */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-110 opacity-20"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      
+
       {/* Light Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-trust-blue/10 via-trust-green/5 to-yellow-400/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-white/10" />
-      
+
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-20 h-20 bg-trust-blue/10 rounded-full blur-xl animate-pulse" />
@@ -206,7 +205,7 @@ const HeroSection = () => {
         <div className="absolute bottom-40 left-20 w-24 h-24 bg-yellow-400/10 rounded-full blur-xl animate-pulse delay-2000" />
         <div className="absolute bottom-20 right-10 w-16 h-16 bg-purple-400/10 rounded-full blur-xl animate-pulse delay-3000" />
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto text-center pt-24">
         {/* Hero Content with Animations */}
         <div className={`mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -218,8 +217,8 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           {/* <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-foreground mb-8 leading-tight"> */}
-            {/* <span className="block">$10</span> */}
-            {/* <span className="block bg-gradient-to-r from-trust-green to-trust-blue bg-clip-text text-transparent">
+          {/* <span className="block">$10</span> */}
+          {/* <span className="block bg-gradient-to-r from-trust-green to-trust-blue bg-clip-text text-transparent">
               Ebooks
             </span> */}
           {/* </h1> */}
@@ -235,15 +234,15 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button 
-              onClick={scrollToForm} 
-              size="lg" 
+            <Button
+              onClick={scrollToForm}
+              size="lg"
               className="text-lg px-10 py-6 bg-gradient-to-r from-trust-blue to-trust-green hover:from-trust-blue/90 hover:to-trust-green/90 text-white font-bold rounded-xl shadow-2xl hover:shadow-trust-green/25 transition-all duration-300 transform hover:scale-105 group"
             >
               Get Your Ebooks Now
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
+
             {/* <Button 
               variant="outline" 
               size="lg" 
@@ -286,7 +285,7 @@ const HeroSection = () => {
               All transactions are protected with industry-standard security and encryption
             </p>
           </div>
-          
+
           <div className="group flex flex-col items-center p-8 bg-white/80 backdrop-blur-md rounded-2xl shadow-soft border border-trust-green/20 hover:bg-white/90 transition-all duration-300 transform hover:scale-105">
             <div className="relative mb-6">
               <div className="absolute inset-0 bg-gradient-to-r from-trust-green to-trust-green rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
@@ -297,7 +296,7 @@ const HeroSection = () => {
               Quality-checked ebooks from trusted publishers and verified sources
             </p>
           </div>
-          
+
           <div className="group flex flex-col items-center p-8 bg-white/80 backdrop-blur-md rounded-2xl shadow-soft border border-purple-400/20 hover:bg-white/90 transition-all duration-300 transform hover:scale-105">
             <div className="relative mb-6">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
@@ -311,11 +310,11 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-trust-blue/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-trust-blue/60 rounded-full mt-2 animate-pulse" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
