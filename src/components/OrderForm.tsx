@@ -12,31 +12,26 @@ const OrderForm = () => {
     fullName: '',
     email: '',
     phone: '',
-    university: '',
-    courseName: '',
-    ebookTitles: '',
+    ebookISBN: '',
+    ebookName: '',
     message: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
-    
+
     toast({
       title: "Order Submitted!",
       description: "We'll contact you within 24 hours with your ebooks.",
     });
 
-    // Reset form
     setFormData({
       fullName: '',
       email: '',
       phone: '',
-      university: '',
-      courseName: '',
-      ebookTitles: '',
+      ebookISBN: '',
+      ebookName: '',
       message: ''
     });
   };
@@ -62,84 +57,69 @@ const OrderForm = () => {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="fullName">Full Name *</Label>
-                  <Input
-                    id="fullName"
-                    name="fullName"
-                    value={formData.fullName}
-                    onChange={handleChange}
-                    required
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address *</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number (Optional)</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="university">University/College Name *</Label>
-                  <Input
-                    id="university"
-                    name="university"
-                    value={formData.university}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your university name"
-                  />
-                </div>
-              </div>
-
               <div className="space-y-2">
-                <Label htmlFor="courseName">Course Name / Subject *</Label>
+                <Label htmlFor="fullName">Full Name *</Label>
                 <Input
-                  id="courseName"
-                  name="courseName"
-                  value={formData.courseName}
+                  id="fullName"
+                  name="fullName"
+                  value={formData.fullName}
                   onChange={handleChange}
                   required
-                  placeholder="e.g., Introduction to Psychology, Biology 101"
+                  placeholder="Enter your full name"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="ebookTitles">Ebook Title(s) Requested *</Label>
-                <Textarea
-                  id="ebookTitles"
-                  name="ebookTitles"
-                  value={formData.ebookTitles}
+                <Label htmlFor="email">Email Address *</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="List the ebook titles, authors, and editions you need"
-                  rows={3}
+                  placeholder="your.email@example.com"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message / Special Instructions (Optional)</Label>
+                <Label htmlFor="phone">Phone Number (Optional)</Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="(555) 123-4567"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="ebookISBN">Ebook ISBN *</Label>
+                <Input
+                  id="ebookISBN"
+                  name="ebookISBN"
+                  value={formData.ebookISBN}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter the ebook ISBN"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="ebookName">Ebook Name *</Label>
+                <Input
+                  id="ebookName"
+                  name="ebookName"
+                  value={formData.ebookName}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter the ebook name"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message">Message (Optional)</Label>
                 <Textarea
                   id="message"
                   name="message"
