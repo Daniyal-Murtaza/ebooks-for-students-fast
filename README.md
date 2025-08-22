@@ -1,73 +1,240 @@
-# Welcome to your Lovable project
+# $10 Ebooks - Enhanced Website
 
-## Project info
+A modern, secure, and responsive website for affordable academic ebooks. This project has been comprehensively enhanced with security features, responsive design, and improved user experience.
 
-**URL**: https://lovable.dev/projects/81a842e2-634d-449e-a4bf-42631f7d7b34
+## 🚀 **Recent Enhancements**
 
-## How can I edit this code?
+### **Security Improvements**
+- **Input Validation & Sanitization**: Comprehensive form validation with XSS protection
+- **CSRF Protection**: CSRF token generation and validation
+- **Rate Limiting**: Prevents form spam and abuse (3 attempts per 15 minutes)
+- **Content Security Policy**: Strict CSP headers for XSS prevention
+- **Security Headers**: X-Frame-Options, X-Content-Type-Options, X-XSS-Protection
+- **Input Sanitization**: Removes malicious scripts and HTML tags
+- **ISBN Validation**: Proper ISBN-10 and ISBN-13 validation with check digits
+- **Email Validation**: Disposable email domain blocking
+- **Error Boundary**: Graceful error handling with user-friendly error pages
 
-There are several ways of editing your application.
+### **Responsive Design**
+- **Mobile-First Approach**: Optimized for all device sizes
+- **Responsive Breakpoints**: xs (320px), sm (640px), md (768px), lg (1024px), xl (1280px), 2xl (1536px)
+- **Adaptive Typography**: Responsive font sizes and spacing
+- **Flexible Grid System**: Responsive grid layouts for different screen sizes
+- **Touch Gestures**: Swipe support for mobile devices
+- **Responsive Images**: Optimized image loading for different devices
+- **Adaptive Navigation**: Mobile drawer, tablet dropdown, desktop horizontal menu
 
-**Use Lovable**
+### **User Experience**
+- **Enhanced Hero Section**: Animated elements, floating orbs, gradient overlays
+- **Improved Form UX**: Real-time validation, error messages, loading states
+- **Interactive Elements**: Hover effects, smooth transitions, micro-animations
+- **Progress Indicators**: Loading bars and scroll progress
+- **Accessibility**: ARIA labels, keyboard navigation, screen reader support
+- **Performance**: Lazy loading, optimized images, efficient animations
+- **Error Handling**: User-friendly error messages and recovery options
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/81a842e2-634d-449e-a4bf-42631f7d7b34) and start prompting.
+### **Technical Improvements**
+- **TypeScript**: Full type safety and better development experience
+- **React Query**: Optimized data fetching with caching and error handling
+- **Error Boundaries**: Graceful error handling throughout the application
+- **Performance Monitoring**: Page load time and memory usage tracking
+- **SEO Optimization**: Meta tags, structured data, semantic HTML
+- **Code Splitting**: Efficient bundle loading
+- **Modern CSS**: CSS Grid, Flexbox, CSS Variables, Backdrop Blur
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 **Tech Stack**
 
-**Use your preferred IDE**
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, CSS Modules
+- **UI Components**: Radix UI, Shadcn/ui
+- **State Management**: React Query, React Hooks
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Forms**: React Hook Form with validation
+- **Animations**: CSS Animations, Framer Motion (ready for integration)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🔧 **Installation & Setup**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone <repository-url>
+cd ebooks-for-students-fast
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📱 **Responsive Features**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### **Mobile (320px - 639px)**
+- Single column layouts
+- Mobile navigation drawer
+- Touch-optimized buttons and inputs
+- Swipe gestures for carousel
+- Optimized typography and spacing
 
-**Use GitHub Codespaces**
+### **Tablet (640px - 1023px)**
+- Two-column grid layouts
+- Dropdown navigation menu
+- Enhanced touch interactions
+- Balanced typography scaling
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### **Desktop (1024px+)**
+- Multi-column layouts
+- Horizontal navigation
+- Hover effects and animations
+- Full feature set
 
-## What technologies are used for this project?
+## 🔒 **Security Features**
 
-This project is built with:
+### **Form Security**
+- Input sanitization prevents XSS attacks
+- CSRF token validation
+- Rate limiting prevents abuse
+- Real-time validation with user feedback
+- Secure form submission handling
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### **Data Protection**
+- No sensitive data stored in localStorage
+- Secure session management
+- Input validation on client and server
+- Error handling without data exposure
 
-## How can I deploy this project?
+### **Content Security**
+- Strict CSP headers
+- XSS protection
+- Clickjacking prevention
+- MIME type sniffing prevention
 
-Simply open [Lovable](https://lovable.dev/projects/81a842e2-634d-449e-a4bf-42631f7d7b34) and click on Share -> Publish.
+## 🎨 **Design System**
 
-## Can I connect a custom domain to my Lovable project?
+### **Colors**
+- **Primary Blue**: `hsl(221, 83%, 53%)` - Trust and reliability
+- **Primary Green**: `hsl(160, 84%, 39%)` - Success and affordability
+- **Light Blue**: `hsl(214, 100%, 97%)` - Background gradients
+- **Semantic Colors**: Success, warning, error, info
 
-Yes, you can!
+### **Typography**
+- **Headings**: Bold, large, gradient text effects
+- **Body**: Readable, accessible font sizes
+- **Responsive**: Scales appropriately across devices
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### **Spacing**
+- **Consistent**: 4px base unit system
+- **Responsive**: Adapts to screen size
+- **Accessible**: Adequate touch targets
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📊 **Performance Optimizations**
+
+### **Loading Performance**
+- Lazy loading for images
+- Code splitting for routes
+- Optimized bundle sizes
+- Efficient caching strategies
+
+### **Runtime Performance**
+- Debounced form inputs
+- Optimized re-renders
+- Efficient state management
+- Memory leak prevention
+
+### **User Experience**
+- Smooth animations (60fps)
+- Instant feedback
+- Progressive enhancement
+- Graceful degradation
+
+## 🧪 **Testing & Quality**
+
+### **Code Quality**
+- TypeScript for type safety
+- ESLint for code consistency
+- Prettier for formatting
+- Error boundaries for stability
+
+### **User Testing**
+- Accessibility testing
+- Cross-browser compatibility
+- Mobile device testing
+- Performance monitoring
+
+## 🚀 **Deployment**
+
+### **Production Build**
+```bash
+npm run build
+```
+
+### **Environment Variables**
+```env
+VITE_API_URL=your-api-url
+VITE_ENVIRONMENT=production
+```
+
+### **Security Headers**
+The application includes comprehensive security headers:
+- Content Security Policy
+- X-Frame-Options
+- X-Content-Type-Options
+- X-XSS-Protection
+- Referrer Policy
+
+## 📈 **Analytics & Monitoring**
+
+### **Performance Monitoring**
+- Page load time tracking
+- Memory usage monitoring
+- Error tracking and reporting
+- User interaction analytics
+
+### **Error Tracking**
+- Error boundary implementation
+- Error reporting system
+- User-friendly error messages
+- Error recovery options
+
+## 🔮 **Future Enhancements**
+
+### **Planned Features**
+- Dark mode support
+- Advanced search functionality
+- User accounts and order history
+- Payment integration
+- Real-time chat support
+- Advanced filtering options
+
+### **Technical Improvements**
+- Service Worker for offline support
+- Progressive Web App features
+- Advanced caching strategies
+- Micro-frontend architecture
+- Advanced analytics integration
+
+## 🤝 **Contributing**
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🆘 **Support**
+
+For support, email support@10ebooks.com or create an issue in the repository.
+
+---
+
+**Built with ❤️ for students worldwide**

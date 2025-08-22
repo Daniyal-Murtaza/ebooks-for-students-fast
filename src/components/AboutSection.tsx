@@ -36,7 +36,7 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               We help students access expensive course materials for just <span className="font-semibold text-trust-green">$10</span>. 
               Our goal is to make education affordable and accessible to everyone. We understand the financial burden 
-              that ebooks place on students, and we're here to help.
+              that expensive course materials place on students, and we're here to help.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In the future, if you like our service and it has helped you save money on your education, 
