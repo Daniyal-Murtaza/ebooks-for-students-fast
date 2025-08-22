@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import OrderForm from "@/components/OrderForm";
 import AboutSection from "@/components/AboutSection";
@@ -63,11 +62,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <Navigation />
-      
       {/* Main Content */}
-      <main className="pt-16 lg:pt-20">
+      <main>
         {/* Hero Section */}
         <HeroSection />
         
