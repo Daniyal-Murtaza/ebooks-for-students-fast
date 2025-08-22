@@ -108,15 +108,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Loading Indicator */}
-      <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
-        <div 
-          className="h-full bg-gradient-to-r from-trust-blue to-trust-green transition-all duration-300"
-          style={{
-            width: `${Math.min((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100, 100)}%`
-          }}
-        />
-      </div>
+
     </div>
   );
 };
