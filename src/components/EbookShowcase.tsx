@@ -2,6 +2,14 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Import book cover images
+import campbellBiology from "@/assets/book-campbell-biology.jpg";
+import organicChemistry from "@/assets/book-organic-chemistry.jpg";
+import graysAnatomy from "@/assets/book-grays-anatomy.jpg";
+import economics from "@/assets/book-economics.jpg";
+import molecularBiology from "@/assets/book-molecular-biology.jpg";
+import engineering from "@/assets/book-engineering.jpg";
+
 const EbookShowcase = () => {
   const expensiveBooks = [
     {
@@ -9,42 +17,48 @@ const EbookShowcase = () => {
       originalPrice: 380,
       publisher: "Pearson",
       edition: "9th Edition",
-      subject: "Biology"
+      subject: "Biology",
+      image: campbellBiology
     },
     {
       title: "Organic Chemistry by Clayden",
       originalPrice: 450,
       publisher: "Oxford University Press",
       edition: "2nd Edition", 
-      subject: "Chemistry"
+      subject: "Chemistry",
+      image: organicChemistry
     },
     {
       title: "Gray's Anatomy for Students",
       originalPrice: 520,
       publisher: "Elsevier",
       edition: "4th Edition",
-      subject: "Medicine"
+      subject: "Medicine",
+      image: graysAnatomy
     },
     {
       title: "Principles of Economics by Mankiw",
       originalPrice: 420,
       publisher: "Cengage Learning",
       edition: "8th Edition",
-      subject: "Economics"
+      subject: "Economics",
+      image: economics
     },
     {
       title: "Molecular Biology of the Cell",
       originalPrice: 490,
       publisher: "W. W. Norton & Company",
       edition: "6th Edition",
-      subject: "Molecular Biology"
+      subject: "Molecular Biology",
+      image: molecularBiology
     },
     {
       title: "Engineering Mechanics: Statics & Dynamics",
       originalPrice: 350,
       publisher: "Pearson",
       edition: "14th Edition",
-      subject: "Engineering"
+      subject: "Engineering",
+      image: engineering
     }
   ];
 
@@ -71,42 +85,51 @@ const EbookShowcase = () => {
             {expensiveBooks.map((book, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                 <Card className="h-full bg-card border border-border shadow-card hover:shadow-soft transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="space-y-4">
-                      <div className="space-y-2">
-                        <Badge variant="secondary" className="text-xs">
-                          {book.subject}
-                        </Badge>
-                        <h3 className="font-semibold text-lg text-card-foreground leading-tight">
-                          {book.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground">
-                          {book.publisher} • {book.edition}
-                        </p>
-                      </div>
-                      
-                      <div className="space-y-3 pt-4 border-t border-border">
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-medium text-muted-foreground">Original Price:</span>
-                          <span className="text-lg font-bold text-destructive line-through">
-                            ${book.originalPrice}
-                          </span>
+                  <CardContent className="p-0">
+                    <div className="relative">
+                      <img 
+                        src={book.image} 
+                        alt={`${book.title} textbook cover`}
+                        className="w-full h-48 object-cover rounded-t-lg"
+                      />
+                      <Badge variant="secondary" className="absolute top-2 left-2 text-xs">
+                        {book.subject}
+                      </Badge>
+                    </div>
+                    <div className="p-6">
+                      <div className="space-y-4">
+                        <div className="space-y-2">
+                          <h3 className="font-semibold text-lg text-card-foreground leading-tight">
+                            {book.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {book.publisher} • {book.edition}
+                          </p>
                         </div>
                         
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-medium text-muted-foreground">Our Price:</span>
-                          <span className="text-2xl font-bold text-trust-green">
-                            $10
-                          </span>
-                        </div>
-                        
-                        <div className="bg-trust-green/10 p-3 rounded-lg">
-                          <div className="text-center">
-                            <span className="text-sm font-semibold text-trust-green">
-                              You Save: ${book.originalPrice - 10}
+                        <div className="space-y-3 pt-4 border-t border-border">
+                          <div className="flex items-center justify-between">
+                            <span className="text-sm font-medium text-muted-foreground">Original Price:</span>
+                            <span className="text-lg font-bold text-destructive line-through">
+                              ${book.originalPrice}
                             </span>
-                            <div className="text-xs text-muted-foreground mt-1">
-                              ({Math.round(((book.originalPrice - 10) / book.originalPrice) * 100)}% savings)
+                          </div>
+                          
+                          <div className="flex items-center justify-between">
+                            <span className="text-sm font-medium text-muted-foreground">Our Price:</span>
+                            <span className="text-2xl font-bold text-trust-green">
+                              $10
+                            </span>
+                          </div>
+                          
+                          <div className="bg-trust-green/10 p-3 rounded-lg">
+                            <div className="text-center">
+                              <span className="text-sm font-semibold text-trust-green">
+                                You Save: ${book.originalPrice - 10}
+                              </span>
+                              <div className="text-xs text-muted-foreground mt-1">
+                                ({Math.round(((book.originalPrice - 10) / book.originalPrice) * 100)}% savings)
+                              </div>
                             </div>
                           </div>
                         </div>
