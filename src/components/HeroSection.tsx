@@ -244,13 +244,13 @@ const HeroSection = () => {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button 
+            {/* <Button 
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-6 border-2 border-trust-blue/30 text-foreground hover:bg-trust-blue/10 backdrop-blur-sm rounded-xl transition-all duration-300"
             >
               View Available Books
-            </Button>
+            </Button> */}
           </div>
 
           {/* Stats */}
