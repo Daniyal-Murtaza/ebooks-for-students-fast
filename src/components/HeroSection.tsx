@@ -24,7 +24,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
             Access expensive course materials for just <span className="font-semibold text-yellow-300">$10</span>. 
-            We help students save money while getting the textbooks they need.
+            We help students save money while getting the ebooks they need.
           </p>
           <Button onClick={scrollToForm} variant="secondary" size="lg" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90">
             Get Your Ebooks Now
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <BookOpen className="w-12 h-12 text-trust-green mb-4" />
             <h3 className="text-lg font-semibold mb-2 text-foreground">Verified Ebooks</h3>
             <p className="text-muted-foreground text-center">
-              Quality-checked textbooks from trusted sources
+              Quality-checked ebooks from trusted sources
             </p>
           </div>
           

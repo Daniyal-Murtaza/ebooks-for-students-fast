@@ -6,25 +6,25 @@ const TestimonialsSection = () => {
     {
       name: "Sarah M.",
       university: "University of Texas",
-      text: "This service helped me get all my textbooks for just $10! Saved me so much money. I was spending hundreds each semester before finding this.",
+      text: "This service helped me get all my ebooks for just $10! Saved me so much money. I was spending hundreds each semester before finding this.",
       rating: 5
     },
     {
       name: "James R.",
       university: "Houston College",
-      text: "Quick delivery and reliable ebooks. Highly recommend! Got my chemistry textbook the same day I ordered it.",
+      text: "Quick delivery and reliable ebooks. Highly recommend! Got my chemistry ebook the same day I ordered it.",
       rating: 5
     },
     {
       name: "Emily K.",
       university: "NYU",
-      text: "Affordable and trustworthy. Made my semester stress-free. No more worrying about expensive textbook costs!",
+      text: "Affordable and trustworthy. Made my semester stress-free. No more worrying about expensive ebook costs!",
       rating: 5
     },
     {
       name: "Michael T.",
       university: "UCLA",
-      text: "Amazing service! Got 3 textbooks for $30 instead of $600. The quality is perfect and delivery was super fast.",
+      text: "Amazing service! Got 3 ebooks for $30 instead of $600. The quality is perfect and delivery was super fast.",
       rating: 5
     },
     {
@@ -43,7 +43,7 @@ const TestimonialsSection = () => {
             What Students Say About Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of students who have saved money on their textbooks
+            Join thousands of students who have saved money on their ebooks
           </p>
         </div>
 

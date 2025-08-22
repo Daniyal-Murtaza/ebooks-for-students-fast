@@ -17,7 +17,7 @@ const DonateSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Help us keep education affordable for students worldwide. Your support enables us to 
-            continue providing textbooks at just $10 and reach more students in need.
+            continue providing ebooks at just $10 and reach more students in need.
           </p>
         </div>
 

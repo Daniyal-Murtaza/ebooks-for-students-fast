@@ -57,7 +57,7 @@ const OrderForm = () => {
               Order Your Ebooks
             </CardTitle>
             <CardDescription className="text-lg">
-              Fill out the form below and we'll get you the textbooks you need for just $10
+              Fill out the form below and we'll get you the ebooks you need for just $10
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -133,7 +133,7 @@ const OrderForm = () => {
                   value={formData.ebookTitles}
                   onChange={handleChange}
                   required
-                  placeholder="List the textbook titles, authors, and editions you need"
+                  placeholder="List the ebook titles, authors, and editions you need"
                   rows={3}
                 />
               </div>

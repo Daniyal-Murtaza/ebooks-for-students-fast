@@ -14,7 +14,7 @@ const Footer = () => {
               $10<span className="text-trust-blue">Ebooks</span>
             </h3>
             <p className="text-muted-foreground mb-4">
-              Making education affordable, one textbook at a time. 
+              Making education affordable, one ebook at a time. 
               Helping students save money on expensive course materials.
             </p>
             <Button variant="accent" size="sm">

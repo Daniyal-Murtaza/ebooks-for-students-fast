@@ -67,7 +67,7 @@ const EbookShowcase = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Expensive Textbooks We've Made <span className="text-trust-green">Affordable</span>
+            Expensive ebooks We've Made <span className="text-trust-green">Affordable</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             See how we've helped thousands of students access these high-cost academic resources for just $10
@@ -89,7 +89,7 @@ const EbookShowcase = () => {
                     <div className="relative">
                       <img 
                         src={book.image} 
-                        alt={`${book.title} textbook cover`}
+                        alt={`${book.title} ebook cover`}
                         className="w-full h-48 object-cover rounded-t-lg"
                       />
                       <Badge variant="secondary" className="absolute top-2 left-2 text-xs">
